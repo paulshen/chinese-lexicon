@@ -1,6 +1,6 @@
-if (typeof require !== "undefined") {
-    etymologyImages = require("./etymologyImages");
-}
+// if (typeof require !== "undefined") {
+    let etymologyImages = require("./etymologyImages");
+// }
 
 let O = "◎";
 

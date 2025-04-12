@@ -1,5 +1,5 @@
-if (typeof require !== "undefined") {
-    ({
+// if (typeof require !== "undefined") {
+    let {
         etymologies,
         addEtymology,
         semsem,
@@ -25,8 +25,8 @@ if (typeof require !== "undefined") {
         radicals,
         radicalNote,
         O
-    } = require("./etymologyCommands"));
-}
+    } = require("./etymologyCommands");
+// }
 
 icon(O, "characterless component", "Placeholder for components that are unknown objects or for which a character does not exist.");
 icon("覀", "[character component]", "覀 is a character component that does not have any meaning on its own. Represents two hands grabbing a waist in the character 要.")
@@ -8422,7 +8422,7 @@ let componentDict = {};
 
 for (let char in etymologies) {
     let etymology = etymologies[char];
-    for (component of etymology.components) {
+    for (let component of etymology.components) {
         let componentChar = canonicalForms[component.char] || component.char;
         componentDict[componentChar] = componentDict[componentChar] || {};
         componentDict[componentChar][component.type] = componentDict[componentChar][component.type] || new Set();

@@ -1,4 +1,4 @@
-let fs = require("fs");
+// let fs = require("fs");
 let formatPinyin = require("./formatPinyin");
 
 let lines = String(require("./cedict")).split("\n");
