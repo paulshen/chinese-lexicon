@@ -2,7 +2,7 @@ console.log("Importing data...");
 
 let { etymologies, componentDict } = require("./etymology");
 let entries = require("./dictionary");
-let { getStatistics, movieCharFrequencies, bookCharFrequencies } = require("./statistics");
+let { getStatistics, movieCharFrequencies, bookCharFrequencies, movieWordFrequencies, bookWordFrequencies } = require("./statistics");
 
 let simpDict = {};
 let tradDict = {};
@@ -156,5 +156,9 @@ module.exports = {
     getEntries,
     getGloss,
     getEtymology,
-    search
+    search,
+    movieCharFrequencies,
+    bookCharFrequencies,
+    movieWordFrequencies,
+    bookWordFrequencies
 };

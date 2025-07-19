@@ -80,4 +80,4 @@ function addTopWords(statistics, char) {
     statistics.topWords = Object.keys(combinedWords).map(word => ({ word, share: combinedWords[word] })).sort((a, b) => b.share - a.share).slice(0, 25);
 }
 
-module.exports = { getStatistics, movieCharFrequencies, bookCharFrequencies };
+module.exports = { getStatistics, movieCharFrequencies, bookCharFrequencies, movieWordFrequencies, bookWordFrequencies };
